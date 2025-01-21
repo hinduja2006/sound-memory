@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(13, 13, 68);
+}
+/*rgb(34, 34, 52);*/
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-family: "Sixtyfour Convergence", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+    font-size: 3rem;
+    text-align: center;
+}
+#upper,#lower{
+    display: flex;
+    gap: 30px;
+}
+#red{
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#green{
+    background-color: green;
+}
+#yellow{
+    background-color: yellow;
+}
+#red,#blue,#yellow,#green{
+    height: 200px;
+    width:200px;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+#start{
+    display: block;
+    margin: auto;
+    padding: 5px 15px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#reset{
+    display: block;
+    margin: auto;
+    margin-top:20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+#level{
+    text-align: center;
+    color: white;
+}
+@media (max-width: 400px){
+    #red,#blue,#yellow,#green{
+        height: 120px;
+        width:120px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
